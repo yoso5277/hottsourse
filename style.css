@@ -1,0 +1,136 @@
+/* 전체 폰트 & 배경 */
+body {
+    font-family: "Nanum Pen Script", cursive;
+    background-color: #E9F7EE; /* 따뜻한 녹색 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 구름 모양 헤더 */
+header {
+    background: #CFEFFD;
+    padding: 30px;
+    border-radius: 40px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(150, 200, 200, 0.4);
+}
+
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 32px;
+}
+
+/* 곡 섹션: 나무 느낌 */
+.song-section {
+    background: #CFF6D8;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 35px;
+    box-shadow: 0 0 18px rgba(180, 220, 180, 0.5);
+}
+
+/* 앨범 커버 - 회전 애니메이션 */
+.album-cover img {
+    width: 180px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    animation: spin 14s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 영상 정렬 */
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* 테이블 : CD 플레이어 구름 */
+.info-table {
+    width: 90%;
+    margin: 20px auto;
+    background: #FFD7E2; 
+    padding: 15px;
+    border-radius: 40px;
+    border: 3px solid #CFEFFD;
+    font-size: 24px;
+}
+
+.info-table th {
+    width: 100px;
+}
+
+/* 체크리스트 */
+.checklist {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.checklist label {
+    display: block;
+    margin: 5px 0;
+    font-size: 24px;
+}
+
+/* 홀수/짝수 구름 색상 */
+.checklist label:nth-child(odd) {
+    background: #CFEFFD;
+    border-radius: 20px;
+}
+.checklist label:nth-child(even) {
+    background: #FFD7E2;
+    border-radius: 20px;
+}
+
+/* 입력 폼 구름 느낌 */
+.my-info {
+    background: #CFEFFD;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 35px;
+}
+
+.my-info input,
+.my-info textarea {
+    width: 90%;
+    font-size: 20px;
+    padding: 8px;
+    border: 3px solid #CFF6D8;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+/* 포커스 시 색연필 느낌 */
+.my-info input:focus,
+.my-info textarea:focus {
+    border-color: #FFD7E2;
+    outline: none;
+    background: #FFF7FA;
+}
+
+/* 버튼 */
+button {
+    margin-top: 15px;
+    font-size: 24px;
+    padding: 8px 20px;
+    background: #CFF6D8;
+    border-radius: 20px;
+    border: 2px solid #A2D5B0;
+}
+
+/* 푸터: 땅 느낌 */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #B8D6B0;
+    margin-top: 40px;
+}
